@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    font-family: "space Grotesk", sans-serif;
+}
+
+
+nav {
+    background-color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 72px;
+    border: 1px solid #6F6F6F;
+}
+
+.pantunesaccent {
+    font-family: "space Grotesk" sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #ff8a2e;
+}
+
+input[type='search'] {
+    width: 524px;
+    height: 56px;
+    background: #1e1e1e;
+    color: #ffff;
+    border: 1px solid #333131;
+    border-radius: 8px;
+    padding: 16px;
+    border: 1px solid #6F6F6F;
+
+}
+
+
+
+input[type='search']::placeholder {
+    background: url('../svgs/search.png');
+    color: #ffff;
+    background-repeat: no-repeat;
+    padding-left: 24px;
+    background-size: 18px 18px;
+    font-weight: 400;
+}
+
+input[type='submit'] {
+    background-color: #0a0a0a;
+    color: #ff8a2e;
+    height: 56px;
+    width: 86px;
+    font-family: "space Grotesk";
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.alvatar {
+    border-radius: 25px;
+}
+
+
+.main-wrapper {
+    display: flex;
+    /* gap: 12px; */
+}
+
+aside {
+    display: flex;
+    width: 304px;
+    background-color: #2e2e2e;
+}
+
+.dark {
+    display: flex;
+    flex-direction: column;
+    background-color: #0a0a0a;
+    padding: 16px 24px;
+    gap: 16px;
+}
+
+.light {
+    padding: 16px 24px;
+    font-family: 'space Grotesk';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.texts {
+    text-decoration: none;
+    color: #ffff;
+    width: 200px;
+    padding-top: 16px;
+}
+
+/* .side-texts {
+    font-family: 'space Grotesk';
+    font-weight: 500;
+    font-size: 16px;
+    padding: 16px 16px 16px;
+    width: 160px;
+} */
+
+
+section {
+    margin: 0 auto;
+    padding: 56px;
+}
+
+.home-images {
+    width: 1200px;
+    border-radius: 8px;
+}
+
+.section-text {
+    font-family: 'space Grotesk';
+    font-weight: 700;
+    font-size: 32px;
+    color: #ffff;
+}
+
+.track-box {
+    display: flex;
+    gap: 24px;
+    /* overflow-x: auto; */
+    max-width: 1200px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* scroll-behavior: smooth; */
+    /* scrollbar-width: none; */
+      
+
+    
+}
+
+.tracks {
+    display: flex;
+    background-color: #2e2e2e;
+    border-radius: 8px;
+}
+
+.tracks-intro {
+    width: 264px;
+     height: 152px;
+     padding: 16px;
+     color: #ffff;
+     
+}
+
+button {
+    background-color: #ff8a2e;
+    color: #ffff;
+    font-family: "space Grotesk";
+    font-weight: 500;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 8px;
+
+}
+
+
+
+/* .track-lists {
+    padding-bottom: 4px;
+} */
+.active{
+    background-color: #311914;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 4px;
+    justify-content: space-between;
+    color: #ffff;
+}
+
+.songs {
+    display: flex;
+    gap: 24px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #2e2e2e;
+    margin-bottom: 4px;
+    justify-content: space-between;
+    color: #ffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.album, .title, .artist-names {
+    width: 314px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 72px 24px 72px;
+    background-color: #2e2e2e;
+    border:1px solid #6F6F6F;
+}
+
+
+
+.music-player {
+    display: flex;
+    color: #ffff;
+    gap: 16px;
+}
+
+.artist-name {
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-size: 16px;
+    width: 142px;
+    height: 26px;
+    margin-bottom: 2px;
+}
+
+.track-title {
+    font-family: "Space Grotesk";
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.playmode-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-bar {
+    width: 600px;
+    height: 8px;
+    border-radius: 4px;
+    padding: 2px;
+    color: #0a0a0a;
+    background-color: #0a0a0a;
+   
+}
+progress[value]::-webkit-progress-value {
+    color: #ff8a2e;
+    background-color: #ff8a2e;
+    border-radius: 2px;
+}
+progress[value]::-webkit-progress-bar {
+background-color: #0a0a0a;
+}
+
+.times {
+    display: flex;
+    justify-content: space-between;
+    color: #ffff;
+    margin-top: 0;
+    padding: 0;
+}
+
+.time {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+
+.footer-notification {
+    display: flex;
+    gap: 16px;
+}
+
+
+
+
+/* Width
+1728px
+Height
+Hug (132px)
+Top
+1810px
+Padding
+24px, 72px, 24px, 72px
+Justify
+space-between
+Gap
+166px */
+.wrapper {
+    
+}
+
+
+/* .home-image {
+    padding: 56px;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+} */
+
+/* .track-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    margin: 0 auto;
+} */
+
+/* .tracks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #2e2e2e;
+    width: 80%;
+} */
+
+/* .tracks-intro {
+     width: 264px;
+     height: 152px;
+     padding: 16px;
+} */
+
+/* .main-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    align-items: center;
+    gap: 256px;
+    font-family: "Space Grotesk";
+} */
+
+/* section {
+    margin: 0 auto;
+} */
+
+/* .sidewrapper {
+    display: flex;
+    background-color: #2e2e2e;
+    width: 304px;
+    height: 100%;
+} */
+
+
+/* .icons {
+    background-color: #0a0a0a;
+    height: 100%;
+} */
+
+/* .side-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    gap: 16px;
+} */
+
+/* .texts {
+    font-family: "Space Grotesk";
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+} */
+
+
+/* .big-brother {
+    display: flex;
+    height: 100%;
+    width: 100%;
+} */
+
+/* .black {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0a0a0a;
+    height: 100%;
+    gap: 23px;
+    padding: 12px;
+} */
+
+/* .brown {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+} */
+
+
+

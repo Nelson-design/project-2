@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    font-family: "space Grotesk", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #2e2e2e;
+    padding: 16px 128px;
+    width: 100%;
+    height: 80px;
+}
+
+
+.nav-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #ff8a2e;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+    border: none;
+    background-color: #0a0a0a;
+}
+
+/* .section-btn {
+    padding: 16px;
+} */
+
+a {
+    text-decoration: none;
+}
+
+.btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+#btn-in,
+#btn-up {
+    width: 83px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #ff8a2e;
+}
+
+#btn-in {
+    background: #2e2e2e2e;
+    color: #ff8a2e;
+}
+
+#btn-up {
+    background: #ff8a2e;
+    color: #0a0a0a;
+}
+
+.section-index {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 96px;
+    padding: 0px 128px;
+}
+
+.section-title {
+    font-family: "Space Grotesk" sans-serif;
+    font-weight: 700;
+    font-size: 88px;
+    color: #fffbf9;
+    margin-bottom: 16px;
+}
+
+.section-text {
+    font-weight: 500;
+    font-size: 24px;
+    color: #fffbf9;
+    margin-bottom: 32px;
+}
+
+
+.section-btn {
+    width: 218px;
+    height: 59px;
+    padding: 16px;
+    background: #ff8a2e;
+    border-radius: 8px;
+    margin-bottom: 64px;
+}
+
+.sect-btn {
+    color: #0a0a0a;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+#slides {
+    width: 100%;
+    height: 518px;
+    /* background-color: #ff8a2e; */
+
+}
+
+/* .dot 
+{
+  height: 5px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-color: #ff8a2e;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 45px;
+  display: inline-block;
+  transition: border-color 0.6s ease;
+} */
+
+.image-container {
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* button {
+    outline: none;
+    cursor: pointer;
+  }
+
+.dot-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    margin: 20 auto 0 auto;
+    gap: 4px;
+}
+
+.dot-box .dot.active {
+    background-color: #ff8a2e;
+} */
+
+
+button {
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .dot-box button {
+    width: 24px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: transparent;
+  }
+  
+  .dot-box .dot.active {
+    background-color: #ff8a2e;
+  }
+
+.featured-selection {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-text {
+    font-family: space Grotesk;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fffbf9;
+    margin-top: 56px;
+    margin-bottom: 34px;
+    text-align: left;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #fffbf9;
+    margin-bottom: 235px;
+    gap: 32px;
+}
+
+.feactured-card {
+    background-image: url('../images/tract.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 344px;
+    height: 344px;
+   
+
+    position: relative;
+}
+
+.card-div {
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.5) 0, black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px;
+    width: 100%;
+    bottom: 0;
+
+    position: absolute;
+}
+
+
+.left {
+    text-align: left;
+}
+
+.right {
+    background: #ff8a2e;
+    border-radius: 16px;
+    width: 56px;
+    height: 56px;
+    
+}
+
+
+.plus {
+    font-size: 32px;
+    text-decoration: none;
+    color: #0a0a0a;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.tracks {
+    text-decoration: none;
+    color: #fffbf9;
+}
+
+
+.artist {
+    text-decoration: none;
+    color: #fffbf9;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+
+.card-title {
+    font-family: spSpace Grotesk;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* .dot-box {
+    height: 5px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: transparent;
+  border-color: #ff8a2e;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 45px;
+  display: flex;
+  transition: border-color 0.6s ease;
+
+}
+
+.dot-box #dot.active {
+    background-color: #ff8a2e;
+
+} */
+
+
