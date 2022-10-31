@@ -10,15 +10,15 @@
 <body>
     
     <nav>
-        <div class="container">
-            <h1 class="pantunesaccent">Pantunes</h1>
-            <form action="#">
+        <div class="navbar">
+            <h1 class="pantunesaccent"><a href="pantune.html" class="pantunes">Pantunes</a></h1>
+           
                 <input type="search" name="search" id="srch" placeholder="Search/tracks/artists">
-                <input type="submit" name="submit" id="submits" value="Search">
-            </form>
+                <div class="input-box"><input type="submit" name="submit" id="submits" value="Search">
+            
             <div class="icon-wrapper">
-                <a href="#"><img src="svgs/nowplaying.jpg" alt="nowplaying" class="nowplaying"></a>
-                <a href="#"><img src="svgs/notification.png" alt="notificationbell" class="notification"></a>
+                <a href="#"><img src="svgs/Adddark.png" alt="nowplaying" class="nowplaying"></a>
+                <a href="#"><img src="svgs/notificationdark.png" alt="notificationbell" class="notification"></a>
                 <a href="#"><img src="svgs/alvatar.png" alt="alvatar" class="alvater"></a>
             </div>
         </div>
@@ -26,53 +26,75 @@
 
     <div class="main-wrapper">
         <aside>
-            <div class="dark">
-                <a href="home.html" class="icons"><img src="svgs/Home.png" alt="home" class="side-icon"></a>
-            
-                    <a href="All-tracks.html" class="icons"><img src="svgs/alltracks.png" alt="alltracks" class="side-icon"></a>
-
-                    <a href="playlist.html" class="icons"><img src="svgs/playlist.png" alt="playlists" class="side-icon"></a>
-            
-                    <a href="#" class="icons"><img src="svgs/settings.png" alt="settings" class="side-icon"></a>
-            
-                    <a href="sign-in.html" class="icons"><img src="svgs/logout.png" alt="logout" class="side-icon"></a>
+            <div class="sidebar">
+                <ul>
+                    <a href="home.html" class="icons">
+                        <li class="menu-items">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="32" height="32" rx="4" fill="#2E2E2E"/>
+                            <path d="M18.25 23.999V19.499C18.25 19.3001 18.1709 19.1093 18.0303 18.9686C17.8897 18.828 17.6989 18.749 17.5 18.749H14.5C14.3011 18.749 14.1103 18.828 13.9697 18.9686C13.8291 19.1093 13.75 19.3001 13.75 19.499V23.999C13.75 24.1979 13.6709 24.3887 13.5303 24.5293C13.3897 24.67 13.1989 24.749 13 24.749H8.5C8.30109 24.749 8.11032 24.67 7.96967 24.5293C7.82902 24.3887 7.75 24.1979 7.75 23.999V15.3271C7.75168 15.2233 7.77411 15.1209 7.81597 15.0259C7.85783 14.9309 7.91828 14.8453 7.99375 14.774L15.4937 7.95835C15.632 7.83187 15.8126 7.76172 16 7.76172C16.1874 7.76172 16.368 7.83187 16.5062 7.95835L24.0062 14.774C24.0817 14.8453 24.1422 14.9309 24.184 15.0259C24.2259 15.1209 24.2484 15.2233 24.25 15.3271V23.999C24.25 24.1979 24.1709 24.3887 24.0303 24.5293C23.8897 24.67 23.6989 24.749 23.5 24.749H19C18.8011 24.749 18.6103 24.67 18.4697 24.5293C18.3291 24.3887 18.25 24.1979 18.25 23.999Z" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>Home</li>
+                        </li>
+                    </a>
+                    <a href="All-tracks.html" class="icons">
+                        <li class="menu-items">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="32" height="32" rx="4" fill="#FF8A2E"/>
+                            <path d="M23.7156 9.77881L16.2156 7.52881C16.1027 7.497 15.984 7.49145 15.8687 7.51257C15.7533 7.53369 15.6443 7.58094 15.55 7.65069C15.4574 7.72104 15.3822 7.81173 15.3302 7.91577C15.2781 8.01979 15.2508 8.13438 15.25 8.25069V18.4038C14.4289 17.6586 13.3589 17.2473 12.25 17.2507C11.36 17.2507 10.49 17.5146 9.74993 18.0091C9.00992 18.5036 8.43314 19.2063 8.09255 20.0286C7.75195 20.8509 7.66284 21.7557 7.83647 22.6286C8.0101 23.5015 8.43869 24.3033 9.06802 24.9326C9.69736 25.562 10.4992 25.9906 11.3721 26.1642C12.245 26.3378 13.1498 26.2487 13.9721 25.9082C14.7944 25.5676 15.4971 24.9908 15.9916 24.2507C16.4861 23.5107 16.75 22.6407 16.75 21.7507V13.7632L23.2844 15.7226C23.3973 15.7544 23.516 15.7599 23.6313 15.7388C23.7467 15.7177 23.8557 15.6704 23.95 15.6007C24.0426 15.5303 24.1179 15.4397 24.1698 15.3356C24.2219 15.2316 24.2493 15.117 24.25 15.0007V10.5007C24.2493 10.3392 24.1971 10.1821 24.101 10.0523C24.0049 9.92246 23.8699 9.82667 23.7156 9.77881Z" fill="#0A0A0A"/>
+                            <path d="M23.7156 9.77881L16.2156 7.52881C16.1027 7.497 15.984 7.49145 15.8687 7.51257C15.7533 7.53369 15.6443 7.58094 15.55 7.65069C15.4574 7.72104 15.3822 7.81173 15.3302 7.91577C15.2781 8.01979 15.2508 8.13438 15.25 8.25069V18.4038C14.4289 17.6586 13.3589 17.2473 12.25 17.2507C11.36 17.2507 10.49 17.5146 9.74993 18.0091C9.00992 18.5036 8.43314 19.2063 8.09255 20.0286C7.75195 20.8509 7.66284 21.7557 7.83647 22.6286C8.0101 23.5015 8.43869 24.3033 9.06802 24.9326C9.69736 25.562 10.4992 25.9906 11.3721 26.1642C12.245 26.3378 13.1498 26.2487 13.9721 25.9082C14.7944 25.5676 15.4971 24.9908 15.9916 24.2507C16.4861 23.5107 16.75 22.6407 16.75 21.7507V13.7632L23.2844 15.7226C23.3973 15.7544 23.516 15.7599 23.6313 15.7388C23.7467 15.7177 23.8557 15.6704 23.95 15.6007C24.0426 15.5303 24.1179 15.4397 24.1698 15.3356C24.2219 15.2316 24.2493 15.117 24.25 15.0007V10.5007C24.2493 10.3392 24.1971 10.1821 24.101 10.0523C24.0049 9.92246 23.8699 9.82667 23.7156 9.77881Z" fill="#0A0A0A"/>
+                            </svg>All tracks</li>
+                    </a>
+                        <a href="playlist.html" class="icons">
+                            <li class="menu-items">
+                            <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="32" height="32" rx="4" fill="#2E2E2E"/>
+                            <path d="M7.75 10.5H24.25M7.75 16.5H19M7.75 22.5H14.5M22.75 22.5V15L26.5 16.125M20.5 24.75C21.7427 24.75 22.75 23.7427 22.75 22.5C22.75 21.2573 21.7427 20.25 20.5 20.25C19.2573 20.25 18.25 21.2573 18.25 22.5C18.25 23.7427 19.2573 24.75 20.5 24.75Z" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.75 10.5H24.25M7.75 16.5H19M7.75 22.5H14.5M22.75 22.5V15L26.5 16.125M20.5 24.75C21.7427 24.75 22.75 23.7427 22.75 22.5C22.75 21.2573 21.7427 20.25 20.5 20.25C19.2573 20.25 18.25 21.2573 18.25 22.5C18.25 23.7427 19.2573 24.75 20.5 24.75Z" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>Playlists
+                        </li>
+                        </a>
+                
+                    <a href="#" class="icons"><li class="menu-items"><img src="svgs/settings.png" alt="settings" class="side-icon">Settings</li></a>
+                    <a href="#" class="icons"><li class="menu-items"><img src="svgs/logout.png" alt="logout" class="side-icon">LogOut</li></a>
+                </ul>
             </div>
 
-            <div class="light">
-                <a href="#" class="texts">
-                    <p class="side-texts">Home</p>
+            <!-- <div class="light">
+                <a href="home.html" class="texts">
+                    <p class="black">Home</p>
+                </a>
+                <a href="All-tracks.html" class="texts">
+                    <p class="alltracks">All Tracks</p>
+                </a>
+                <a href="playlist.html" class="texts">
+                    <p class="playlists">Playlists</p>
                 </a>
                 <a href="#" class="texts">
-                    <p class="side-texts">All Tracks</p>
+                    <p class="settings">Settings</p>
                 </a>
-                <a href="#" class="texts">
-                    <p class="side-texts">Playlists</p>
+                <a href="sign-in.html" class="texts">
+                    <p class="logout">Log Out</p>
                 </a>
-                <a href="#" class="texts">
-                    <p class="side-texts">Settings</p>
-                </a>
-                <a href="#" class="texts">
-                    <p class="side-texts">Log Out</p>
-                </a>
-            </div>
+            </div> -->
         </aside>
 
         <section>
             <div class="home-img">
-                <a href="#" class="playnow-img"><img class="home-images
-                    " src="images/Ads.jpg" alt="flower"></a>
+                <a href="#" class="playnow-img">
+                    <img class="home-images" src="images/slider5.jpg" alt="flower">
+                </a>
             </div>
 
             <p class="section-text">Featured Album</p>
 
-            <div class="track-box">
+         <div class="track-box">
 
              <div class="tracks">
-                    <div class="track-image"><img src="images/albumart3.png" alt="burnaboy" class="tracks-img"></div>
+                   <img src="images/albumart3.png" alt="burnaboy" class="tracks-img">
                     <div class="tracks-intro">
                         <p class="track-title">Twice As Tall</p>
                         <p class="artist-name">Burna Boy</p>
-                        <button><a href="#" class="afro-beat">Afro Beat</a></button>
+                        <button><a href="afrobeat" class="afro-beat">Afro Beat</a></button>
                     </div>
              </div>
 
@@ -81,7 +103,7 @@
                 <div class="tracks-intro">
                     <p class="track-title">You Decide</p>
                     <p class="artist-name">Sunset on a Hill</p>
-                    <button><a href="#" class="afro-beat">R&B</a></button>
+                    <button><a href="r&b" class="afro-beat">R&B</a></button>
                 </div>
             </div>
 
@@ -137,125 +159,459 @@
 
         <div class="track-lists">
             <div class="active">
-                <a href="#"><img src="svgs/play.png" alt=""></a>
+                <a class="play" href="#"><img class="big" src="svgs/play.png" alt="#"></a>
                 <a class="album" href="#">Love, Damini</a>
                 <a class="title" href="#">Love, Damini|2022</a>
                 <a class="artist-name"  href="#">Burna Boy</a>
-                <a class="cover-img" href="#"><img src="svgs/Visual Meter.png" alt=""></a>
+                <a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
                 <a class="track-time" href="#">03:23</a>
             </div>
 
             <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
                 <a class="album" href="#">Burna Boy & Fireboy</a>
                 <a class="title" href="#">Burna Boy & Fireboy|2022</a>
                 <a class="artist-name"  href="#">Burna Boy & Fireboy</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
                 <a class="track-time" href="#">03:23</a>
             </div>
             <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
-                <a class="album" href="#">Sungba (Remix) [feat. Burna Boy]</a>
-                <a class="title" href="#">Asake|2022</a>
-                <a class="artist-name"  href="#">Asake</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
-                <a class="track-time" href="#">03:54</a>
-            </div>
-            <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
-                <a class="album" href="#">Love, Damini</a>
-                <a class="title" href="#">Love, Damini|2022</a>
-                <a class="artist-name"  href="#">Burna Boy</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
+                <a class="album" href="#">Burna Boy & Fireboy</a>
+                <a class="title" href="#">Burna Boy & Fireboy|2022</a>
+                <a class="artist-name"  href="#">Burna Boy & Fireboy</a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
                 <a class="track-time" href="#">03:23</a>
             </div>
             <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
-                <a class="album" href="#">Love, Damini</a>
-                <a class="title" href="#">Love, Damini|2022</a>
-                <a class="artist-name"  href="#">Burna Boy</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
+                <a class="album" href="#">Burna Boy & Fireboy</a>
+                <a class="title" href="#">Burna Boy & Fireboy|2022</a>
+                <a class="artist-name"  href="#">Burna Boy & Fireboy</a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
                 <a class="track-time" href="#">03:23</a>
             </div>
             <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
-                <a class="album" href="#">Love, Damini</a>
-                <a class="title" href="#">Love, Damini|2022</a>
-                <a class="artist-name"  href="#">Burna Boy</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
+                <a class="album" href="#">Burna Boy & Fireboy</a>
+                <a class="title" href="#">Burna Boy & Fireboy|2022</a>
+                <a class="artist-name"  href="#">Burna Boy & Fireboy</a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
                 <a class="track-time" href="#">03:23</a>
             </div>
             <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
-                <a class="album" href="#">Love, Damini</a>
-                <a class="title" href="#">Love, Damini|2022</a>
-                <a class="artist-name"  href="#">Burna Boy</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
+                <a class="album" href="#">Burna Boy & Fireboy</a>
+                <a class="title" href="#">Burna Boy & Fireboy|2022</a>
+                <a class="artist-name"  href="#">Burna Boy & Fireboy</a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
                 <a class="track-time" href="#">03:23</a>
             </div>
             <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
-                <a class="album" href="#">Love, Damini</a>
-                <a class="title" href="#">Love, Damini|2022</a>
-                <a class="artist-name"  href="#">Burna Boy</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
+                <a class="album" href="#">Burna Boy & Fireboy</a>
+                <a class="title" href="#">Burna Boy & Fireboy|2022</a>
+                <a class="artist-name"  href="#">Burna Boy & Fireboy</a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a class="track-time" href="#">03:23</a>
+            </div>
+
+            <div class="songs">
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
+                <a class="album" href="#">Burna Boy & Fireboy</a>
+                <a class="title" href="#">Burna Boy & Fireboy|2022</a>
+                <a class="artist-name"  href="#">Burna Boy & Fireboy</a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a class="track-time" href="#">03:23</a>
+            </div>
+
+            <div class="songs">
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
+                <a class="album" href="#">Burna Boy & Fireboy</a>
+                <a class="title" href="#">Burna Boy & Fireboy|2022</a>
+                <a class="artist-name"  href="#">Burna Boy & Fireboy</a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a class="track-time" href="#">03:23</a>
+            </div>
+
+            <div class="songs">
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
+                <a class="album" href="#">Burna Boy & Fireboy</a>
+                <a class="title" href="#">Burna Boy & Fireboy|2022</a>
+                <a class="artist-name"  href="#">Burna Boy & Fireboy</a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
                 <a class="track-time" href="#">03:23</a>
             </div>
             <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
-                <a class="album" href="#">Love, Damini</a>
-                <a class="title" href="#">Love, Damini|2022</a>
-                <a class="artist-name"  href="#">Burna Boy</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
+                <a class="album" href="#">Burna Boy & Fireboy</a>
+                <a class="title" href="#">Burna Boy & Fireboy|2022</a>
+                <a class="artist-name"  href="#">Burna Boy & Fireboy</a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
                 <a class="track-time" href="#">03:23</a>
             </div>
             <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
-                <a class="album" href="#">Love, Damini</a>
-                <a class="title" href="#">Love, Damini|2022</a>
-                <a class="artist-name"  href="#">Burna Boy</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
+                <a class="album" href="#">Burna Boy & Fireboy</a>
+                <a class="title" href="#">Burna Boy & Fireboy|2022</a>
+                <a class="artist-name"  href="#">Burna Boy & Fireboy</a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
                 <a class="track-time" href="#">03:23</a>
             </div>
             <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
-                <a class="album" href="#">Love, Damini</a>
-                <a class="title" href="#">Love, Damini|2022</a>
-                <a class="artist-name"  href="#">Burna Boy</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
+                <a class="album" href="#">Burna Boy & Fireboy</a>
+                <a class="title" href="#">Burna Boy & Fireboy|2022</a>
+                <a class="artist-names"  href="#">Burna Boy & Fireboy</a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
                 <a class="track-time" href="#">03:23</a>
             </div>
             <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
-                <a class="album" href="#">Love, Damini</a>
-                <a class="title" href="#">Love, Damini|2022</a>
-                <a class="artist-name"  href="#">Burna Boy</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
+                <a class="album" href="#">Burna Boy & Fireboy</a>
+                <a class="title" href="#">Burna Boy & Fireboy|2022</a>
+                <a class="artist-name"  href="#">Burna Boy & Fireboy</a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
                 <a class="track-time" href="#">03:23</a>
             </div>
             <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
-                <a class="album" href="#">Love, Damini</a>
-                <a class="title" href="#">Love, Damini|2022</a>
-                <a class="artist-name"  href="#">Burna Boy</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
+                <a href="#" class="pause"><img src="svgs/pause.png" alt=""></a>
+                <a class="album" href="#">Burna Boy & Fireboy</a>
+                <a class="title" href="#">Burna Boy & Fireboy|2022</a>
+                <a class="artist-name"  href="#">Burna Boy & Fireboy</a>
+                <a class="cover-img" href="#"><a class="cover-img" href="#">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="5" y1="14" x2="5" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="9" y1="17" x2="9" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="13" y1="6" x2="13" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="17" y1="23" x2="17" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="21" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="25" y1="21" x2="25" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="29" y1="17" x2="29" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="33" y1="12" x2="33" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="37" y1="15" x2="37" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="41" y1="23" x2="41" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="45" y1="6" x2="45" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="49" y1="17" x2="49" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="53" y1="10" x2="53" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="57" y1="15" x2="57" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="61" y1="23" x2="61" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="65" y1="10" x2="65" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="69" y1="21" x2="69" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="73" y1="23" x2="73" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="77" y1="14" x2="77" y2="26" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
                 <a class="track-time" href="#">03:23</a>
             </div>
-            <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
-                <a class="album" href="#">Love, Damini</a>
-                <a class="title" href="#">Love, Damini|2022</a>
-                <a class="artist-name"  href="#">Burna Boy</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
-                <a class="track-time" href="#">03:23</a>
-            </div>
-            <div class="songs">
-                <a href="#"><img src="svgs/pause.png" alt=""></a>
-                <a class="album" href="#">Love, Damini</a>
-                <a class="title" href="#">Love, Damini|2022</a>
-                <a class="artist-name"  href="#">Burna Boy</a>
-                <a class="cover-img" href="#"><img src="" alt=""></a>
-                <a class="track-time" href="#">03:23</a>
             </div>
         </div>
         </section>
@@ -289,7 +645,7 @@
                             <path d="M9.35896 19.3738L17.7214 13.9926C17.8352 13.9201 17.9664 13.8796 18.1012 13.8754C18.236 13.8712 18.3694 13.9034 18.4875 13.9686C18.6055 14.0339 18.7038 14.1298 18.7719 14.2462C18.84 14.3626 18.8755 14.4952 18.8746 14.6301V25.3738C18.8755 25.5087 18.84 25.6413 18.7719 25.7577C18.7038 25.8741 18.6055 25.97 18.4875 26.0352C18.3694 26.1005 18.236 26.1327 18.1012 26.1285C17.9664 26.1243 17.8352 26.0838 17.7214 26.0113L9.35896 20.6301C9.25241 20.5635 9.16454 20.4709 9.10362 20.361C9.04271 20.2512 9.01074 20.1276 9.01074 20.0019C9.01074 19.8763 9.04271 19.7527 9.10362 19.6428C9.16454 19.533 9.25241 19.4404 9.35896 19.3738ZM19.8589 19.3738L28.2214 13.9926C28.3352 13.9201 28.4664 13.8796 28.6012 13.8754C28.736 13.8712 28.8694 13.9034 28.9875 13.9686C29.1055 14.0339 29.2038 14.1298 29.2719 14.2462C29.34 14.3626 29.3755 14.4952 29.3746 14.6301V25.3738C29.3755 25.5087 29.34 25.6413 29.2719 25.7577C29.2038 25.8741 29.1055 25.97 28.9875 26.0352C28.8694 26.1005 28.736 26.1327 28.6012 26.1285C28.4664 26.1243 28.3352 26.0838 28.2214 26.0113L19.8589 20.6301C19.7524 20.5635 19.6645 20.4709 19.6036 20.361C19.5427 20.2512 19.5107 20.1276 19.5107 20.0019C19.5107 19.8763 19.5427 19.7527 19.6036 19.6428C19.6645 19.533 19.7524 19.4404 19.8589 19.3738Z" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                     </a>
-                    <a href="#" class="play">
+                    <a href="#" class="playnow">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="40" height="40" rx="8" fill="#0A0A0A"/>
                             <path d="M29.7781 18.7163L16.2781 10.4757C16.0533 10.3332 15.7935 10.2552 15.5274 10.2503C15.2612 10.2453 14.9988 10.3136 14.7688 10.4476C14.5353 10.5756 14.3407 10.7643 14.2055 10.9936C14.0702 11.2229 13.9992 11.4845 14 11.7507V28.2507C13.9992 28.5169 14.0702 28.7785 14.2055 29.0078C14.3407 29.2372 14.5353 29.4258 14.7688 29.5538C14.9988 29.6878 15.2612 29.7561 15.5274 29.7511C15.7935 29.7462 16.0533 29.6682 16.2781 29.5257L29.7781 21.2851C29.9994 21.1516 30.1824 20.9632 30.3095 20.7382C30.4366 20.5132 30.5033 20.2591 30.5033 20.0007C30.5033 19.7423 30.4366 19.4883 30.3095 19.2632C30.1824 19.0382 29.9994 18.8498 29.7781 18.7163Z" fill="#FF8A2E"/>

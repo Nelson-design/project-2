@@ -3,7 +3,7 @@ const img1 = "images/slider1.png";
 const img2 = "images/slider2.jpg";
 const img3 = "images/slider3.jpg";
 const img4 = "images/slider4.jpg";
-const img5 = "images/ads.jpg";
+const img5 = "images/slider5.jpg";
 
 
 let imageArray = [img1, img2, img3, img4, img5];

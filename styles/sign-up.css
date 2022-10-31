@@ -13,13 +13,40 @@ body {
     font-family: "space Grotesk", sans-serif;
 }
 
+nav {
+    background-color: #2E2E2E;
+    position: sticky;
+    top: 0;
+}
+
+.nav-item {
+    width: 100%;
+    height: 80px;
+    padding: 16px 128px 16px 128px;
+}
+
+.home {
+    text-decoration: none;
+    font-family: "space Grotesk";
+    color: #ff8a2e;
+    font-size: 32px;
+    font-weight: 700;
+    width: 130px;
+    height: 38px;
+}
+
 
 .wrapper {
-    margin: 0 auto;
+    margin: 38px 510px;
+    align-items: center;
+    justify-content: center;
     background-color: #2E2E2E;
     border-radius: 16px;
+    border-radius: 16px;
+    top: 208px;
     width: 720px;
-    height: 655px;
+    height: 647px;
+    left: 504px;
     
 }
 
@@ -66,7 +93,7 @@ form {
     padding-left: 16px;
 }
 
-.flex {
+.optional {
     display: flex;
     justify-content: center;
     align-items: center;

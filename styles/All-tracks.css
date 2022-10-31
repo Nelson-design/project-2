@@ -105,14 +105,16 @@ aside {
     flex-direction: column;
     background-color: #0a0a0a;
     padding: 16px 24px;
-    gap: 16px;
+    gap: 19px;
 }
 
 .light {
-    padding: 16px 24px;
+    display: grid;
+    height: 52px;
     font-family: 'space Grotesk';
     font-weight: 500;
     font-size: 16px;
+    gap: 26px;
 }
 
 .icons {
@@ -133,13 +135,32 @@ aside {
     color: #ffff;
     width: 200px;
     height: 32px;
-    margin-top: 35px;
+    margin-top: 28px;
+    
 }
 
-.side-texts {
+.black {
+    background-color: #0a0a0a;
+    color: #ff8a2e;
+    padding: 8px 0 0 18px;
+    width: 145px;
+    height: 36px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 18px;
+}
+
+.home, .playlists, .settings, .logout {
+    padding: 5px 0 0 18px;
+    width: 152px;
+    height: 20px;
+} 
+
+/* .side-texts {
     margin-top: 45px;
     height: 32px;
-}
+} */
+
+
 
 section {
     margin: 0;
@@ -198,6 +219,10 @@ a {
 
 .album, .title, .artist-names {
     width: 314px;
+}
+
+.cover-img {
+    width: 11px;
 }
 
 .footer-container {

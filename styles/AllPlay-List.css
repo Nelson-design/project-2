@@ -32,6 +32,11 @@ nav {
     font-family: "space Grotesk" sans-serif;
     font-weight: 700;
     font-size: 32px;
+    cursor: pointer;
+}
+
+.pantunes {
+    text-decoration: none;
     color: #ff8a2e;
 }
 
@@ -107,11 +112,14 @@ aside {
 }
 
 .light {
-    padding: 16px 24px;
+    display: grid;
+    height: 34px;
     font-family: 'space Grotesk';
     font-weight: 500;
     font-size: 16px;
+    gap: 51px;
 }
+
 
 .icons {
     width: 32px;
@@ -129,7 +137,8 @@ aside {
 .texts {
     text-decoration: none;
     color: #ffff;
-    width: 200px;
+    padding: 5px 0 0 18px;
+    width: 152px;
     height: 32px;
     margin-top: 35px;
 }
@@ -138,6 +147,22 @@ aside {
     margin-top: 45px;
     height: 32px;
 }
+
+
+/* .black {
+    background-color: #0a0a0a;
+    color: #ff8a2e;
+    padding: 8px 0 0 18px;
+    width: 145px;
+    height: 36px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 48px;
+}
+.home, .alltracks, .settings, .logout {
+    padding: 5px 0 0 18px;
+    width: 152px;
+    height: 32px;
+} */
 
 section {
     margin: 0 auto;
@@ -155,6 +180,7 @@ section {
 .album-wrapper {
     display: flex;
     flex-direction: column;
+    width: 100%;
     /* flex-wrap: nowrap; */
     gap: 24px;
 }
@@ -260,8 +286,19 @@ section {
     position: absolute;
 }
 
+.album-title {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
 .texts {
     margin: 0;
+    padding-top: 5px;
+    font-family: "space Grotesk";
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .album-icon {

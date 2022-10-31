@@ -15,6 +15,8 @@ body {
 
 nav {
     background-color: #2E2E2E;
+    position: sticky;
+    top: 0;
 }
 
 .nav-item {
@@ -36,7 +38,7 @@ nav {
 
 
 .wrapper {
-    margin: 0 auto;
+    margin: 38px 510px;
     align-items: center;
     justify-content: center;
     background-color: #2E2E2E;
@@ -129,11 +131,16 @@ form {
     font-size: 16px;
     font-family: "space Grotesk";
     padding-left: 16px;
+    color: #fffbf9;
 }
 
 .login {
     font-weight: 700;
     font-size: 18px;
+}
+
+.forgetpass {
+    text-decoration: none;
 }
 
 

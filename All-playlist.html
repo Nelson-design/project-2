@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/AllPlay-List.css">
-    <title>Pantunes2.0 Play List</title>
+    <title>Pantunes2.0 All Album</title>
 </head>
     <body>
         
         <nav>
             <div class="container">
-                <h1 class="pantunesaccent">Pantunes</h1>
+                <h1 class="pantunesaccent"><a href="pantune.html" class="pantunes">Pantunes</a></h1>
                 <form action="#">
-                    <input type="search" name="search" id="srch" placeholder="Search/tracks/artists">
+                    <input type="search" name="search" id="search" placeholder="Search/tracks/artists">
                     <input type="submit" name="submit" id="submits" value="Search">
                 </form>
                 <div class="icon-wrapper">
@@ -23,13 +23,16 @@
                         <path d="M22.75 7V11.5M25 9.25H20.5M11.5 23.125V10L16.0187 8.875M17.875 12.9062L11.5 14.5M23.5 15.9344V20.125M20.875 22.75C22.3247 22.75 23.5 21.5747 23.5 20.125C23.5 18.6753 22.3247 17.5 20.875 17.5C19.4253 17.5 18.25 18.6753 18.25 20.125C18.25 21.5747 19.4253 22.75 20.875 22.75ZM8.875 25.75C10.3247 25.75 11.5 24.5747 11.5 23.125C11.5 21.6753 10.3247 20.5 8.875 20.5C7.42525 20.5 6.25 21.6753 6.25 23.125C6.25 24.5747 7.42525 25.75 8.875 25.75Z" stroke="#EAD3C0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
+
                     <a href="#">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="32" height="32" rx="8" fill="#0A0A0A"/>
                         <path d="M13.0004 22.0001V22.7501C13.0004 23.5458 13.3164 24.3088 13.8791 24.8714C14.4416 25.434 15.2047 25.7501 16.0004 25.7501C16.796 25.7501 17.5591 25.434 18.1217 24.8714C18.6843 24.3088 19.0004 23.5458 19.0004 22.7501V22.0001M9.26904 13.7501C9.26779 12.861 9.44246 11.9803 9.783 11.159C10.1235 10.3377 10.6232 9.5918 11.2532 8.96438C11.8832 8.33697 12.6312 7.8404 13.454 7.50329C14.2767 7.16617 15.158 6.99515 16.0472 7.0001C19.7597 7.02823 22.7315 10.1126 22.7315 13.8345V14.5001C22.7315 17.8563 23.4347 19.8063 24.0534 20.8751C24.1191 20.9889 24.1538 21.118 24.1539 21.2494C24.154 21.3809 24.1196 21.51 24.0541 21.624C23.9885 21.7379 23.8943 21.8326 23.7806 21.8986C23.6669 21.9646 23.5379 21.9996 23.4065 22.0001H8.59404C8.46261 21.9996 8.33361 21.9646 8.21996 21.8986C8.10632 21.8326 8.01201 21.7379 7.9465 21.624C7.88099 21.51 7.84656 21.3809 7.84668 21.2494C7.84679 21.118 7.88145 20.9889 7.94717 20.8751C8.56592 19.8063 9.26904 17.8563 9.26904 14.5001V13.7501Z" stroke="#EAD3C0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
-                    <a href="sign-in.html"><img src="svgs/alvatar.png" alt="alvatar" class="alvater"></a>
+
+                    <a href="sign-in.html"><img src="svgs/alvatar.png" alt="alvatar" class="alvater">
+                    </a>
                 </div>
             </div>
         </nav>
@@ -37,7 +40,12 @@
         <div class="main-wrapper">
             <aside>
                 <div class="dark">
-                    <a href="home.html" class="icons"><img src="svgs/Home.png" alt="home" class="side-icon"></a>
+                    <a href="home.html" class="icons">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.5" width="32" height="32" rx="4" fill="#2E2E2E"/>
+                            <path d="M18.25 23.999V19.499C18.25 19.3001 18.1709 19.1093 18.0303 18.9686C17.8897 18.828 17.6989 18.749 17.5 18.749H14.5C14.3011 18.749 14.1103 18.828 13.9697 18.9686C13.8291 19.1093 13.75 19.3001 13.75 19.499V23.999C13.75 24.1979 13.6709 24.3887 13.5303 24.5293C13.3897 24.67 13.1989 24.749 13 24.749H8.5C8.30109 24.749 8.11032 24.67 7.96967 24.5293C7.82902 24.3887 7.75 24.1979 7.75 23.999V15.3271C7.75168 15.2233 7.77411 15.1209 7.81597 15.0259C7.85783 14.9309 7.91828 14.8453 7.99375 14.774L15.4937 7.95835C15.632 7.83187 15.8126 7.76172 16 7.76172C16.1874 7.76172 16.368 7.83187 16.5062 7.95835L24.0062 14.774C24.0817 14.8453 24.1422 14.9309 24.184 15.0259C24.2259 15.1209 24.2484 15.2233 24.25 15.3271V23.999C24.25 24.1979 24.1709 24.3887 24.0303 24.5293C23.8897 24.67 23.6989 24.749 23.5 24.749H19C18.8011 24.749 18.6103 24.67 18.4697 24.5293C18.3291 24.3887 18.25 24.1979 18.25 23.999Z" stroke="#FF8A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </a>
                 
                 <a href="All-tracks.html" class="icons"><img src="svgs/alltracks.png" alt="alltracks" class="side-icon"></a>
                 <a href="playlist.html" class="icons"><img src="svgs/playlist.png" alt="playlists" class="side-icon"></a>
@@ -107,7 +115,7 @@
                                     <p class="texts">Artists</p>
                                 </div>
                                 <div class="album-icon">
-                                    <a href="playlist.html" class="like"><svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="#" class="like"><svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M15.7781 8.71631L2.27812 0.475702C2.05327 0.333202 1.79355 0.25521 1.52737 0.250252C1.26121 0.245295 0.998782 0.313552 0.768757 0.447577C0.535327 0.575647 0.34074 0.764265 0.205455 0.993585C0.0701698 1.2229 -0.000803144 1.48445 6.85639e-06 1.7507V18.2507C-0.000803144 18.5169 0.0701698 18.7785 0.205455 19.0078C0.34074 19.2372 0.535327 19.4258 0.768757 19.5538C0.998782 19.6878 1.26121 19.7561 1.52737 19.7511C1.79355 19.7462 2.05327 19.6682 2.27812 19.5257L15.7781 11.2851C15.9994 11.1516 16.1824 10.9632 16.3095 10.7382C16.4366 10.5132 16.5033 10.2591 16.5033 10.0007C16.5033 9.74231 16.4366 9.48829 16.3095 9.26321C16.1824 9.03821 15.9994 8.84981 15.7781 8.71631Z" fill="#0A0A0A"/>
                                         </svg>
                                         </a>
@@ -138,7 +146,7 @@
                                     <p class="texts">Sportify ft Gustav Soderstrom</p>
                                 </div>
                                 <div class="album-icon">
-                                    <a href="#" class="like"><svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="playlist.html" class="like"><svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M15.7781 8.71631L2.27812 0.475702C2.05327 0.333202 1.79355 0.25521 1.52737 0.250252C1.26121 0.245295 0.998782 0.313552 0.768757 0.447577C0.535327 0.575647 0.34074 0.764265 0.205455 0.993585C0.0701698 1.2229 -0.000803144 1.48445 6.85639e-06 1.7507V18.2507C-0.000803144 18.5169 0.0701698 18.7785 0.205455 19.0078C0.34074 19.2372 0.535327 19.4258 0.768757 19.5538C0.998782 19.6878 1.26121 19.7561 1.52737 19.7511C1.79355 19.7462 2.05327 19.6682 2.27812 19.5257L15.7781 11.2851C15.9994 11.1516 16.1824 10.9632 16.3095 10.7382C16.4366 10.5132 16.5033 10.2591 16.5033 10.0007C16.5033 9.74231 16.4366 9.48829 16.3095 9.26321C16.1824 9.03821 15.9994 8.84981 15.7781 8.71631Z" fill="#0A0A0A"/>
                                         </svg>
                                         </a>
